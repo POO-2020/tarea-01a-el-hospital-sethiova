@@ -1,9 +1,11 @@
 class Nombre {
-        constructor(){
-
+        constructor(nombre, apellidoPaterno, apellidoMaterno){
+                this.nombre = nombre
+                this.apellidoPaterno = apellidoPaterno
+                this.apellidoMaterno = apellidoMaterno
         }
         getNombreCompleto(){
-
+        
         }
         getApellidoNombre(){
 
