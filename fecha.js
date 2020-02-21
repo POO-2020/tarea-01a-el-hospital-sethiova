@@ -1,4 +1,4 @@
-class Fecha {
+export default class Fecha {
 
     constructor(fecha){
         this.fecha = fecha
@@ -24,7 +24,7 @@ class Fecha {
         return(`${dia} dias`)
     }
     getFecha(){
-        let mes = this.mes[this.fecha.getMonth() - 1]
+        let mes = this.mes[this.fecha.getMonth() ]
         return(`${this.fecha.getDay()}/${mes}/${this.fecha.getFullYear()}`)
     }
     getDiaFecha(){
@@ -32,6 +32,7 @@ class Fecha {
         return(`Es el dia ${dia}`)
     }
 }
+/*
 let prueba1 = new Fecha(new Date(2001,9,5))
 console.log(`${prueba1.getAños()}`)
 console.log(`${prueba1.getMeses()}`)
@@ -39,3 +40,4 @@ console.log(`${prueba1.getSemanas()}`)
 console.log(`${prueba1.getDias()}`)
 console.log(`${prueba1.getFecha()}`)
 console.log(`${prueba1.getDiaFecha()}`)
+*/
