@@ -17,5 +17,3 @@ export default class Doctor {
     return(`${this.cedula}, ${this.especialidad}, ${this.nombre.getNombreCompleto()}, ${this.cedula}`)        
     }
 }
-let prueba = new Doctor(new Nombre("Loquillo","Menzillo","Carrillo"), "Cirujano Plastico", "312-102-3332", "3DAIDI2I1J")
-console.log(prueba.getPerfil())

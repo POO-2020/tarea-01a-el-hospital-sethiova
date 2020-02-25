@@ -3,17 +3,17 @@ import Fecha from "./fecha.js";
 import Tiempo from "./tiempo.js";
 import Doctor from "./doctor.js";
 import Nombre from "./nombre.js";
-import Cita from ".//cita.js";
+import Cita from "./cita.js";
 
 export default class Hospital {
     /**
      * 
      * @param {string} nombre 
      * @param {string} direccion 
-     * @param {string} doctores 
-     * @param {string} citas 
+     * @param {Doctor} doctores | clase Doctor
+     * @param {Cita} citas | clase Cita
      */
-    constructor(nombre, direccion, doctores, citas){
+    constructor(nombre, direccion){
         this.nombre = nombre
         this.direccion = direccion
         this.doctores = new Array()
@@ -24,7 +24,7 @@ export default class Hospital {
     }
     listarDoctores(){
         this.doctores.forEach((doctor, i) =>{
-            console.log(`${i}, ${doctor.getPerfil()}`)
+            console.log(`${i}.- ${doctor.getPerfil()}`)
         })
     }
     registrarCita(cita){
@@ -32,7 +32,7 @@ export default class Hospital {
     }
     listarCitas(){
         this.citas.forEach((cita,i) => {
-            console.log(`${i}, ${cita.getCita()}`)
+            console.log(`${i}.- ${cita.getCita()}`)
         })
     }
 }

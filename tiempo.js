@@ -27,6 +27,3 @@ export default class Tiempo {
         return(`${hora}`)
     }
 }
-let prueba1 = new Tiempo(new Date())
-console.log(prueba1.getFormato12())
-console.log(prueba1.getFormato24())

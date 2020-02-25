@@ -14,7 +14,3 @@ export default class Nombre {
         return(`${this.nombre.charAt(0)} ${this.apellidoPaterno.charAt(0)} ${this.apellidoMaterno.charAt(0)}`)
         }
 }
-let prueba1 = new Nombre("Juan", "Perez","THE GAME ._.xD")
-console.log(prueba1.getNombreCompleto())
-console.log(prueba1.getApellidoNombre())
-console.log(prueba1.getIniciales())

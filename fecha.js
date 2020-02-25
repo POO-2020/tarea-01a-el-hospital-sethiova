@@ -32,12 +32,3 @@ export default class Fecha {
         return(`Es el dia ${dia}`)
     }
 }
-/*
-let prueba1 = new Fecha(new Date(2001,9,5))
-console.log(`${prueba1.getAños()}`)
-console.log(`${prueba1.getMeses()}`)
-console.log(`${prueba1.getSemanas()}`)
-console.log(`${prueba1.getDias()}`)
-console.log(`${prueba1.getFecha()}`)
-console.log(`${prueba1.getDiaFecha()}`)
-*/
