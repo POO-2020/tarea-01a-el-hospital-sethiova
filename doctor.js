@@ -1,5 +1,12 @@
 import Nombre from "./nombre.js"
 export default class Doctor {
+    /**
+     * 
+     * @param {string} nombre 
+     * @param {string} especialidad 
+     * @param {number} telefono 
+     * @param {string} cedula 
+     */
     constructor(nombre, especialidad, telefono, cedula){
         this.nombre = nombre
         this.especialidad = especialidad
