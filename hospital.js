@@ -1,20 +1,38 @@
-class Hospital {
+import Paciente from "./paciente.js";
+import Fecha from "./fecha.js";
+import Tiempo from "./tiempo.js";
+import Doctor from "./doctor.js";
+import Nombre from "./nombre.js";
+import Cita from ".//cita.js";
+
+export default class Hospital {
+    /**
+     * 
+     * @param {string} nombre 
+     * @param {string} direccion 
+     * @param {string} doctores 
+     * @param {string} citas 
+     */
     constructor(nombre, direccion, doctores, citas){
         this.nombre = nombre
         this.direccion = direccion
-        this.doctores = doctores
-        this.citas = citas
+        this.doctores = new Array()
+        this.citas = new Array()
     }
-    registrarDoctor(){
-
+    registrarDoctor(doctor){
+        this.doctores.push(doctor)
     }
     listarDoctores(){
-
+        this.doctores.forEach((doctor, i) =>{
+            console.log(`${i}, ${doctor.getPerfil()}`)
+        })
     }
-    registrarCita(){
-        
+    registrarCita(cita){
+    this.citas.push(cita)        
     }
     listarCitas(){
-
+        this.citas.forEach((cita,i) => {
+            console.log(`${i}, ${cita.getCita()}`)
+        })
     }
 }
