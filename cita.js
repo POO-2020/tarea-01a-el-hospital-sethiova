@@ -9,8 +9,8 @@ class Cita {
         this.paciente = paciente
     }
     getCita(){
-    return(`${this.fecha.getFecha()}, ${this.hora.getFormato24()}`)
+    return(`${this.fecha.getFecha()}, ${this.hora.getFormato24()}, Dr.${this.doctor.getNombreCompleto()}, ${this.paciente.getNombreCompleto()}`)
     }
 }
-let prueba = new Cita(new Date(), new Tiempo(new Date()),new Nombre("Angelo","Martin","Perez"), new Nombre("Pablo","Escobar","Sos"))
+let prueba = new Cita(new Date(), new Tiempo(new Date()), new Nombre("Angelo","Martin","Perez"), new Nombre("Pablo","Escobar","Sos"))
 console.log(prueba.getCita())
